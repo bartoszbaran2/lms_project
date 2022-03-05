@@ -19,3 +19,9 @@ DJANGO_SU_NAME=testAdmin
 DJANGO_SU_EMAIL=teastAdmin@aa.pl
 DJANGO_SU_PASSWORD=testPass123ORD=
 '''
+
+## CRUD
+x | Create | Read | Update | Delete
+---:| :---:  | :---: | :---:
+SQL | Insert | SELECT| UPDATE | DELETE
+API | POST   | GET   | PUT/PATCH| DELETE

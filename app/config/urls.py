@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.http import HttpResponse
-from django.urls import path
-
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lambda x:HttpResponse('it works'))
+    path('', lambda x:HttpResponse('it works'), name='home'),
+    path('users/', include('django.contrib.auth.urls')), #podpięcie innych urlsow z django
+    path('accounts/', include('accounts.urls')),  # podpiecie lokalnych urls do globalnych
+
 ]
